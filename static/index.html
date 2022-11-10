@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Go WebAssembly</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="static/wasm_exec.js" defer></script>
+	<script src="static/wasm.js" defer></script>
+</head>
+
+<body>
+	<h1>PokemonGolang</h1>
+	<p>Get pokemon stats:</p>
+    <input type="text" name="pokemon" id="pokemon">
+    <input type="button" onclick="run()" value="Get Stats">
+    <p id='stats'></p>
+</body>
+
+</html>

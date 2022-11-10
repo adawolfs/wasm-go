@@ -1,0 +1,9 @@
+services:
+  wasm:
+    image: go-wasm
+    build:
+      context: .
+      platforms:
+        - wasi/wasm32
+    restart: unless-stopped
+    runtime: io.containerd.wasmedge.v1
